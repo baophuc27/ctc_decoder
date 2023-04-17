@@ -19,4 +19,4 @@ fi
 
 echo "Install decoders ..."
 # python3 setup.py install --num_processes 10
-python3 setup.py install --user --num_processes 10
+export PYTHONNOUSERSITE=True && python3 setup.py install --user --num_processes 10
